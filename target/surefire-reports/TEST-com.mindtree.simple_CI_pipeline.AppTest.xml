@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mindtree.simple_CI_pipeline.AppTest" time="0.005" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mindtree.simple_CI_pipeline.AppTest" time="0.038" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\test-classes;C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\classes;C:\Users\Linu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\test-classes;C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\classes;C:\Users\Linu\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Linu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\Linu\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Linu\AppData\Local\Temp\surefire1147425124182847397\surefirebooter1725609469743995046.jar C:\Users\Linu\AppData\Local\Temp\surefire1147425124182847397 2021-02-23T14-28-50_539-jvmRun1 surefire16325761884595814010tmp surefire_017270163124309770751tmp"/>
+    <property name="sun.java.command" value="C:\Users\Linu\AppData\Local\Temp\surefire4182748381055700908\surefirebooter7588005830160303298.jar C:\Users\Linu\AppData\Local\Temp\surefire4182748381055700908 2021-02-23T15-55-16_952-jvmRun1 surefire3561182954933991597tmp surefire_01843911463643546314tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\test-classes;C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\classes;C:\Users\Linu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\test-classes;C:\Users\Linu\eclipse-workspace\simple-CI-pipeline\target\classes;C:\Users\Linu\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Linu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Linu"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Linu\AppData\Local\Temp\surefire1147425124182847397\surefirebooter1725609469743995046.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Linu\AppData\Local\Temp\surefire4182748381055700908\surefirebooter7588005830160303298.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -55,5 +55,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testApp" classname="com.mindtree.simple_CI_pipeline.AppTest" time="0.001"/>
+  <testcase name="testAdd" classname="com.mindtree.simple_CI_pipeline.AppTest" time="0.001"/>
+  <testcase name="testSubtract" classname="com.mindtree.simple_CI_pipeline.AppTest" time="0"/>
 </testsuite>

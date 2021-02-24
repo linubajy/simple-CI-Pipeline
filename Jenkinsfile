@@ -13,7 +13,7 @@ pipeline{
             steps 
             {
                
-               git branch: 'master', url: 'https://github.com/linubajy/simple-CI-pipeline-jFrog.git'
+               git branch: 'master', url: 'https://github.com/linubajy/simple-CI-Pipeline.git'
             }
           }
           stage("Test")

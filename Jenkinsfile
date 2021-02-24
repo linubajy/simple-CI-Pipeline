@@ -45,6 +45,14 @@ pipeline{
                 }
               }
             }
+            script
+            {
+              def qualitygate = waitForQualityGate()
+              if (qualitygate.status != "OK")
+              {
+                 error "Pipeline aborted due to quality gate coverage failure: ${qualitygate.status}"
+              }
+            }  
           }
           stage('collect artifact')
           {
@@ -74,19 +82,7 @@ pipeline{
      }}
       
     
-    stage('SonarQube Quality Gate') { 
-            steps{
-                timeout(time: 1, unit: 'HOURS') { 
-                    script{
-                        def qg = waitForQualityGate() 
-                        if (qg.status != 'OK') {
-                            error "Pipeline aborted due to quality gate failure: ${qg.status}"
-                         }
-                    }
-                    
-                }
-            }
-        }
+   
     
     
     }

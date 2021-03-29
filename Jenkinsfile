@@ -36,7 +36,7 @@ pipeline{
           {
             steps
             {
-              withSonarQubeEnv('sonar-server') 
+              withSonarQubeEnv('sonarCloudID') 
               {
                 withMaven(maven:'maven')
                 {
@@ -46,7 +46,7 @@ pipeline{
               }
             }  
           }
-         stage("Quality Gate") {
+      /*   stage("Quality Gate") {
             steps {
               sleep(60)
               timeout(time: 1, unit: 'HOURS') {
@@ -87,7 +87,7 @@ pipeline{
     buildNumber: '1'
     )
      }}
-     
+     */
     }
   
     post {  

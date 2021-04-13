@@ -31,8 +31,26 @@ pipeline{
             } 
               
           } 
+        
+          stage("Docker")
+        {
+            steps
+          {
+             bat 'docker image prune -a --force'
+             bat 'docker build'
+          }
+        }   
     
-          stage("SonarQube analysis") 
+        stage("Pushing image to docker")
+    {
+      steps
+      {
+        bat 'docker login -u linubajy -p linubajy1997'
+        bat 'docker tag project:latest linubajy/calcu:v${env.BUILD_ID}'
+        bat 'docker push linubajy/calcu:v${env.BUILD_ID}'
+      }
+    }
+       /*   stage("SonarQube analysis") 
           {
             steps
             {
@@ -46,7 +64,7 @@ pipeline{
               }
             }  
           }
-      /*   stage("Quality Gate") {
+        stage("Quality Gate") {
             steps {
               sleep(60)
               timeout(time: 1, unit: 'HOURS') {

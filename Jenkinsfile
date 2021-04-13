@@ -37,7 +37,7 @@ pipeline{
             steps
           {
              bat 'docker image prune -a --force'
-             bat 'docker build'
+             bat 'docker build -t linubajy/calcu:v${env.BUILD_ID} .'
           }
         }   
     
@@ -46,7 +46,7 @@ pipeline{
       steps
       {
         bat 'docker login -u linubajy -p linubajy1997'
-        bat 'docker tag project:latest linubajy/calcu:v${env.BUILD_ID}'
+        //bat 'docker tag project:latest linubajy/calcu:v${env.BUILD_ID}'
         bat 'docker push linubajy/calcu:v${env.BUILD_ID}'
       }
     }

@@ -37,7 +37,7 @@ pipeline{
             steps
           {
              bat 'docker image prune -a --force'
-             bat 'docker build -t linubajy/calcu:v${env.BUILD_ID} .'
+             bat 'docker build --tag linubajy/calcu:v${env.BUILD_ID} .'
           }
         }   
     
